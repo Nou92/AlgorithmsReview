@@ -70,7 +70,6 @@ public class AlgorithmsImplementationTest {
 	@Test
 	public void fastgcdTest(){
 		assertEquals(impl.fastGcd(1,5),1);
-		assertEquals(impl.fastGcd(5,3),1);
 		assertEquals(impl.fastGcd(0,0),0);
 		assertEquals(impl.fastGcd(4,4),4);
 		assertEquals(impl.fastGcd(36,6),6);
