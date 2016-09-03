@@ -34,6 +34,7 @@ public class AlgorithmsImplementationTest {
 		assertEquals(impl.fastMaximumPairWiseProduct(orderedTest2.length,orderedTest2),resultOrderedTest2);
 
 	}
+	@Test
 	public void slowMaximumPairWiseProductTest() {
 		assertEquals(impl.slowMaximumPairWiseProduct(simpleTest1.length,simpleTest1),resultSimpleTest1);
 		assertEquals(impl.slowMaximumPairWiseProduct(simpleTest2.length,simpleTest2),resultSimpleTest2);
@@ -42,5 +43,39 @@ public class AlgorithmsImplementationTest {
 		assertEquals(impl.slowMaximumPairWiseProduct(orderedTest1.length,orderedTest1),resultOrderedTest1);
 		assertEquals(impl.slowMaximumPairWiseProduct(orderedTest2.length,orderedTest2),resultOrderedTest2);
 	}
+	@Test
+	public void slowFibonnaciNumberTest(){
+		assertEquals(impl.slowFibonnaciNumber(1),1);
+		assertEquals(impl.slowFibonnaciNumber(11),89);
+		assertEquals(impl.slowFibonnaciNumber(30),832040);
+
+	}
+	@Test
+	public void fastFibonnaciNumberTest(){
+		assertEquals(impl.fastFibonnaciNumber(1),1);
+		assertEquals(impl.fastFibonnaciNumber(11),89);
+		assertEquals(impl.fastFibonnaciNumber(30),832040);
+		assertEquals(impl.fastFibonnaciNumber(46),1836311903);
+
+	}
+	@Test
+	public void slowgcdTest(){
+		assertEquals(impl.slowGcd(1,5),1);
+		assertEquals(impl.slowGcd(5,3),1);
+		assertEquals(impl.slowGcd(0,0),0);
+		assertEquals(impl.slowGcd(4,4),4);
+		assertEquals(impl.slowGcd(36,6),6);
+
+	}
+	@Test
+	public void fastgcdTest(){
+		assertEquals(impl.fastGcd(1,5),1);
+		assertEquals(impl.fastGcd(5,3),1);
+		assertEquals(impl.fastGcd(0,0),0);
+		assertEquals(impl.fastGcd(4,4),4);
+		assertEquals(impl.fastGcd(36,6),6);
+
+	}
+	
 
 }
